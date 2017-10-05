@@ -3,4 +3,6 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-        return HttpResponse("Hello, world. Welcome to the Soy information network.")
+        return render(request, 'SOYIN/index.html', {})
+def index2(request):
+        return render(request, 'SOYIN/index2.html', {})
